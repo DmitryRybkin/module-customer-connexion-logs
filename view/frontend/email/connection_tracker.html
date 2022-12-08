@@ -1,0 +1,11 @@
+<!--@subject {{trans "Total customers connexion for the previous day"}} @-->
+<!--@vars {
+"var total_connexion":"Total Connexion",
+} @-->
+{{template config_path="design/email/header_template"}}
+
+<div class="greeting" style="text-align: center">
+    <h3>{{trans "Total connexion: <span style="color: orangered">%total_connexion</span>" total_connexion=$total_connexion |raw}}</h3>
+</div>
+
+{{template config_path="design/email/footer_template"}}

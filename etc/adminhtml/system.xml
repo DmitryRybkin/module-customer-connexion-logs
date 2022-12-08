@@ -13,6 +13,14 @@
                     <label>Enable Tracking</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
+                <field id="tracker_email_template" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Tracker email template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+                <field id="recipient" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email Recipient</label>
+                    <validate>validate-emails</validate>
+                </field>
             </group>
         </section>
     </system>

@@ -1,0 +1,11 @@
+<?php
+/** @var \Magento\Backend\Block\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \MyCompany\CustomerConnexionLogs\ViewModel\CustomerConnectionInfo $viewModel */
+?>
+<?php $viewModel = $block->getData('connection_view_model'); ?>
+<?php $customerIp = $viewModel->getLastVisitedCustomerIp(); ?>
+<?php if ($customerIp): ?>
+    <h2><?= __("Customer last detected IP:"); ?></h2>
+    <h3><?= $escaper->escapeHtml($customerIp); ?></h3>
+<?php endif; ?>
