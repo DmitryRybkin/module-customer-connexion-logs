@@ -1,0 +1,18 @@
+{
+    "customer_connexion_logs": {
+        "column": {
+            "entity_id": true,
+            "customer_id": true,
+            "ip": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "index": {
+            "CUSTOMER_CONNEXION_LOGS_ENTITY_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "CUSTOMER_CONNEXION_LOGS_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    }
+}

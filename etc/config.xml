@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customer_connection_log>
+            <general>
+                <enabled>1</enabled>
+                <tracker_email_template>customer_connexion_logs_tracker_template</tracker_email_template>
+                <recipient>rybka.dima1414@gmail.com</recipient>
+            </general>
+        </customer_connection_log>
+    </default>
+</config>
